@@ -4,6 +4,9 @@
   --md-primary-fg-color--light: #ffffff; 
   --md-primary-fg-color--dark: #ffffff;
   --md-accent-fg-color: #0080ff;         /* 强调色设为亮蓝 */
+  
+  /* 侧边栏样式变量 */
+  --md-nav-font-weight: 500;             /* 导航字体粗细 */
 }
 
 /* 顶部导航栏样式 */
@@ -11,6 +14,7 @@
   background-color: #ffffff !important;
   color: #333333 !important;             /* 图标默认颜色为深灰 */
   box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* 添加底部细微阴影，更有层次感 */
+  border-bottom: 1px solid #e0e0e0;       /* 添加底部分割线 */
 }
 
 /* 网站标题文字 - 模仿截图中的蓝色渐变或高亮蓝 */
@@ -19,7 +23,47 @@
   font-weight: bold;
 }
 
-/* 针对深色模式的适配（可选，保持深色模式下依然舒适） */
+/* --- 侧边栏导航样式增强 (ADK 风格) --- */
+
+/* 1. 一级标题 (Section Headers) */
+/* 增强分组标题的区分度：加粗、变色、增加上间距 */
+.md-nav__item .md-nav__title {
+  font-weight: 700 !important;
+  color: #202124 !important; /* Google 深灰色 */
+  font-size: 0.95rem;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase; /* 许多技术文档的一级分类喜欢全大写 */
+  opacity: 0.8;
+}
+
+/* 2. 二级链接 (Page Links) */
+/* 普通链接样式 */
+.md-nav__link {
+  font-weight: 400;
+  color: #5f6368; /* 次级灰 */
+}
+
+/* 选中状态高亮 */
+.md-nav__item--active > .md-nav__link {
+  color: #1967d2 !important; /* Google Blue */
+  background-color: #e8f0fe; /* 浅蓝背景 */
+  border-radius: 0 20px 20px 0; /* 圆角效果 */
+  font-weight: 600;
+}
+
+/* 3. 针对嵌套列表的缩进调整 */
+.md-nav__list {
+  padding-left: 0;
+}
+/* 每一层级的缩进线 */
+.md-nav__item {
+  padding-left: 4px;
+}
+
+
+/* --- 深色模式适配 --- */
 [data-md-color-scheme="slate"] .md-header {
   background-color: #1e1e20 !important;
   border-bottom: 1px solid #2e2e32;
@@ -27,4 +71,13 @@
 [data-md-color-scheme="slate"] .md-header__title {
   color: #58a6ff !important;
 }
-
+[data-md-color-scheme="slate"] .md-nav__item .md-nav__title {
+  color: #e8eaed !important;
+}
+[data-md-color-scheme="slate"] .md-nav__link {
+  color: #9aa0a6;
+}
+[data-md-color-scheme="slate"] .md-nav__item--active > .md-nav__link {
+  color: #8ab4f8 !important;
+  background-color: rgba(138, 180, 248, 0.15);
+}
