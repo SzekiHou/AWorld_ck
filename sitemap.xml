@@ -5,23 +5,31 @@
          <lastmod>2025-11-26</lastmod>
     </url>
     <url>
-         <loc>https://github.com/inclusionAI/AWorld/Quickstart/agent_construction/</loc>
+         <loc>https://github.com/inclusionAI/AWorld/quickstart/</loc>
          <lastmod>2025-11-26</lastmod>
     </url>
     <url>
-         <loc>https://github.com/inclusionAI/AWorld/Quickstart/agent_training/</loc>
+         <loc>https://github.com/inclusionAI/AWorld/core_concepts/agents/</loc>
          <lastmod>2025-11-26</lastmod>
     </url>
     <url>
-         <loc>https://github.com/inclusionAI/AWorld/Quickstart/install/</loc>
+         <loc>https://github.com/inclusionAI/AWorld/core_concepts/mas/</loc>
          <lastmod>2025-11-26</lastmod>
     </url>
     <url>
-         <loc>https://github.com/inclusionAI/AWorld/Quickstart/multi-agent_system_construction/</loc>
+         <loc>https://github.com/inclusionAI/AWorld/core_concepts/workflows/</loc>
          <lastmod>2025-11-26</lastmod>
     </url>
     <url>
-         <loc>https://github.com/inclusionAI/AWorld/Quickstart/workflow_construction/</loc>
+         <loc>https://github.com/inclusionAI/AWorld/guides/building_agents/</loc>
+         <lastmod>2025-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/inclusionAI/AWorld/guides/orchestration/</loc>
+         <lastmod>2025-11-26</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/inclusionAI/AWorld/guides/training/</loc>
          <lastmod>2025-11-26</lastmod>
     </url>
 </urlset>

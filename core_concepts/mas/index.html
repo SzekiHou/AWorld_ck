@@ -8,29 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://github.com/inclusionAI/AWorld/">
+        <link rel="canonical" href="https://github.com/inclusionAI/AWorld/core_concepts/mas/">
       
       
+        <link rel="prev" href="../workflows/">
       
-        <link rel="next" href="quickstart/">
+      
+        <link rel="next" href="../../guides/building_agents/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>AWorld Developer Platform</title>
+        <title>Multi-Agent Systems - AWorld Developer Platform</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#aworld-developer-platform" class="md-skip">
+        <a href="#multi-agent-systems-mas" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="AWorld Developer Platform" class="md-header__button md-logo" aria-label="AWorld Developer Platform" data-md-component="logo">
+    <a href="../.." title="AWorld Developer Platform" class="md-header__button md-logo" aria-label="AWorld Developer Platform" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Multi-Agent Systems
             
           </span>
         </div>
@@ -219,11 +221,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -242,7 +242,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="quickstart/" class="md-tabs__link">
+      <a href="../../quickstart/" class="md-tabs__link">
         
   
   
@@ -259,11 +259,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="core_concepts/agents/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../agents/" class="md-tabs__link">
           
   
   
@@ -283,7 +285,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="guides/building_agents/" class="md-tabs__link">
+        <a href="../../guides/building_agents/" class="md-tabs__link">
           
   
   
@@ -317,7 +319,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="AWorld Developer Platform" class="md-nav__button md-logo" aria-label="AWorld Developer Platform" data-md-component="logo">
+    <a href="../.." title="AWorld Developer Platform" class="md-nav__button md-logo" aria-label="AWorld Developer Platform" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -344,37 +346,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Home
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -390,48 +365,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#get-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Get started
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#build-deploy-and-scale" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Build, deploy, and scale
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -443,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="quickstart/" class="md-nav__link">
+      <a href="../../quickstart/" class="md-nav__link">
         
   
   
@@ -467,28 +400,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -506,7 +442,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -524,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="core_concepts/agents/" class="md-nav__link">
+      <a href="../agents/" class="md-nav__link">
         
   
   
@@ -552,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="core_concepts/workflows/" class="md-nav__link">
+      <a href="../workflows/" class="md-nav__link">
         
   
   
@@ -577,10 +513,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="core_concepts/mas/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Agent Systems
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -596,6 +559,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dynamic-handoffs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dynamic Handoffs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-driven-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Event-Driven Architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#routing-topology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Routing &amp; Topology
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -669,7 +685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guides/building_agents/" class="md-nav__link">
+      <a href="../../guides/building_agents/" class="md-nav__link">
         
   
   
@@ -697,7 +713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guides/orchestration/" class="md-nav__link">
+      <a href="../../guides/orchestration/" class="md-nav__link">
         
   
   
@@ -725,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guides/training/" class="md-nav__link">
+      <a href="../../guides/training/" class="md-nav__link">
         
   
   
@@ -780,10 +796,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#get-started" class="md-nav__link">
+  <a href="#dynamic-handoffs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Get started
+        Dynamic Handoffs
       
     </span>
   </a>
@@ -791,10 +807,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#build-deploy-and-scale" class="md-nav__link">
+  <a href="#event-driven-architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Build, deploy, and scale
+        Event-Driven Architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#routing-topology" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Routing &amp; Topology
       
     </span>
   </a>
@@ -818,22 +845,21 @@
 
 
 
-<h1 id="aworld-developer-platform">AWorld Developer Platform<a class="headerlink" href="#aworld-developer-platform" title="Permanent link">&para;</a></h1>
-<p>Use the AWorld API to build <strong>stateful agents</strong>, <strong>complex workflows</strong>, and <strong>multi-agent systems</strong> that can learn and evolve. AWorld provides a robust framework for agent orchestration and reinforcement learning integration.</p>
-<h2 id="get-started">Get started<a class="headerlink" href="#get-started" title="Permanent link">&para;</a></h2>
-<p><a href="quickstart/"><strong>Quickstart</strong></a><br />
-Build your first agent in 5 minutes with Python.</p>
-<p><a href="core_concepts/agents/"><strong>Core concepts</strong></a><br />
-Understand Agents, Swarms, and how AWorld manages state.</p>
-<p><a href="guides/building_agents/"><strong>Guides</strong></a><br />
-Step-by-step instructions for memory design, tools, multi-agent systems, and training.</p>
-<h2 id="build-deploy-and-scale">Build, deploy, and scale<a class="headerlink" href="#build-deploy-and-scale" title="Permanent link">&para;</a></h2>
-<p><a href="guides/building_agents/"><strong>Building Agents</strong></a><br />
-Working code examples for common use cases and agent patterns.</p>
-<p><a href="guides/orchestration/"><strong>Orchestration</strong></a><br />
-Learn how to build complex Workflows and Multi-Agent Systems.</p>
-<p><a href="guides/training/"><strong>Training</strong></a><br />
-Integrate with Reinforcement Learning frameworks like Verl to train your agents.</p>
+<h1 id="multi-agent-systems-mas">Multi-Agent Systems (MAS)<a class="headerlink" href="#multi-agent-systems-mas" title="Permanent link">&para;</a></h1>
+<p>While Workflows handle static processes, <strong>Multi-Agent Systems (MAS)</strong> in AWorld are designed for <strong>dynamic, real-time decision-making</strong>.</p>
+<h2 id="dynamic-handoffs">Dynamic Handoffs<a class="headerlink" href="#dynamic-handoffs" title="Permanent link">&para;</a></h2>
+<p>In a MAS, the flow of execution is not hardcoded. Instead, agents decide at runtime who to talk to next based on the conversation context. This is achieved using the <code>GraphBuildType.HANDOFF</code> mode in a <code>Swarm</code>.</p>
+<ul>
+<li><strong>Agent A</strong> receives a query.</li>
+<li><strong>Agent A</strong> decides it needs help from <strong>Agent B</strong>.</li>
+<li><strong>Agent A</strong> "hands off" the task to <strong>Agent B</strong>.</li>
+<li><strong>Agent B</strong> performs the task and may hand back to <strong>A</strong> or forward to <strong>Agent C</strong>.</li>
+</ul>
+<h2 id="event-driven-architecture">Event-Driven Architecture<a class="headerlink" href="#event-driven-architecture" title="Permanent link">&para;</a></h2>
+<p>MAS in AWorld relies on an event mechanism. The output of one agent serves as the input for the next, facilitating complex interaction patterns.</p>
+<h2 id="routing-topology">Routing &amp; Topology<a class="headerlink" href="#routing-topology" title="Permanent link">&para;</a></h2>
+<p>Even in a dynamic system, you define a <strong>Topology</strong>—a set of allowed connections. For example, you might allow the "Manager" to talk to "Worker A" and "Worker B", but prevent "Worker A" from talking directly to "Worker B".</p>
+<p>AWorld supports complex routing logic, allowing you to override default behaviors and implement custom routing protocols (e.g., Round Robin, Broadcast, or Semantic Routing).</p>
 
 
 
@@ -889,10 +915,10 @@ Integrate with Reinforcement Learning frameworks like Verl to train your agents.
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
   </body>
