@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://github.com/inclusionAI/AWorld/guides/orchestration/">
+        <link rel="canonical" href="https://github.com/inclusionAI/AWorld/build_agents/configuration/">
       
       
+        <link rel="prev" href="../multi_agent_systems/">
+      
+      
+        <link rel="next" href="../../tools/built_in_tools/">
       
       
         
@@ -21,7 +25,7 @@
     
     
       
-        <title>Orchestration: Workflows & MAS - AWorld Developer Platform</title>
+        <title>Agent Configuration - AWorld Developer Platform</title>
       
     
     
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#orchestration-workflows-mas" class="md-skip">
+        <a href="#agent-configuration" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Orchestration: Workflows &amp; MAS
+              Agent Configuration
             
           </span>
         </div>
@@ -371,8 +375,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -383,13 +389,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -410,7 +414,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -428,7 +432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../build_agents/llm_agents/" class="md-nav__link">
+      <a href="../llm_agents/" class="md-nav__link">
         
   
   
@@ -456,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../build_agents/workflows/" class="md-nav__link">
+      <a href="../workflows/" class="md-nav__link">
         
   
   
@@ -484,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../build_agents/multi_agent_systems/" class="md-nav__link">
+      <a href="../multi_agent_systems/" class="md-nav__link">
         
   
   
@@ -509,10 +513,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../build_agents/configuration/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Configuration
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -528,6 +559,87 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Environment Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-agentconfig-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. AgentConfig Object
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-shared-modelconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Shared ModelConfig
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -890,22 +1002,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#workflows-static-topology" class="md-nav__link">
+  <a href="#configuration-methods" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Workflows (Static Topology)
+        Configuration Methods
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Workflows (Static Topology)">
+    <nav class="md-nav" aria-label="Configuration Methods">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sequential" class="md-nav__link">
+  <a href="#1-environment-variables" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Sequential
+        1. Environment Variables
       
     </span>
   </a>
@@ -913,10 +1025,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#parallel" class="md-nav__link">
+  <a href="#2-agentconfig-object" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Parallel
+        2. AgentConfig Object
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-shared-modelconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Shared ModelConfig
       
     </span>
   </a>
@@ -929,80 +1052,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#multi-agent-systems-dynamic-handoff" class="md-nav__link">
+  <a href="#advanced-settings" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Multi-Agent Systems (Dynamic Handoff)
+        Advanced Settings
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Multi-Agent Systems (Dynamic Handoff)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#basic-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Basic Setup
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hybrid-systems" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hybrid Systems
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#advanced-routing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Advanced Routing
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Advanced Routing">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#custom-handlers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Custom Handlers
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#examples-react-and-plan-execute" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Examples: ReAct and Plan-Execute
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1023,70 +1079,71 @@
 
 
 
-<h1 id="orchestration-workflows-mas">Orchestration: Workflows &amp; MAS<a class="headerlink" href="#orchestration-workflows-mas" title="Permanent link">&para;</a></h1>
-<p>This guide covers how to connect multiple agents to build Workflows and Multi-Agent Systems (MAS).</p>
-<h2 id="workflows-static-topology">Workflows (Static Topology)<a class="headerlink" href="#workflows-static-topology" title="Permanent link">&para;</a></h2>
-<p>Workflows are useful for deterministic processes.</p>
-<h3 id="sequential">Sequential<a class="headerlink" href="#sequential" title="Permanent link">&para;</a></h3>
-<p>Execute agents in a strict order: Agent A -&gt; Agent B.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">aworld.core.agent.swarm</span><span class="w"> </span><span class="kn">import</span> <span class="n">Swarm</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">aworld.runner</span><span class="w"> </span><span class="kn">import</span> <span class="n">Runners</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Define the sequence</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">swarm</span> <span class="o">=</span> <span class="n">Swarm</span><span class="p">([(</span><span class="n">agent1</span><span class="p">,</span> <span class="n">agent2</span><span class="p">),</span> <span class="p">(</span><span class="n">agent2</span><span class="p">,</span> <span class="n">agent3</span><span class="p">)],</span> <span class="n">root_agent</span><span class="o">=</span><span class="p">[</span><span class="n">agent1</span><span class="p">])</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">Runners</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="nb">input</span><span class="o">=</span><span class="s2">&quot;start&quot;</span><span class="p">,</span> <span class="n">swarm</span><span class="o">=</span><span class="n">swarm</span><span class="p">)</span>
+<h1 id="agent-configuration">Agent Configuration<a class="headerlink" href="#agent-configuration" title="Permanent link">&para;</a></h1>
+<p>AWorld offers flexible configuration options for Agents, allowing you to define model providers, API keys, and runtime behaviors.</p>
+<h2 id="configuration-methods">Configuration Methods<a class="headerlink" href="#configuration-methods" title="Permanent link">&para;</a></h2>
+<h3 id="1-environment-variables">1. Environment Variables<a class="headerlink" href="#1-environment-variables" title="Permanent link">&para;</a></h3>
+<p>The quickest way to configure agents.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>LLM_PROVIDER</code></td>
+<td style="text-align: left;">The model provider</td>
+<td style="text-align: left;"><code>openai</code>, <code>anthropic</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>LLM_MODEL_NAME</code></td>
+<td style="text-align: left;">The model ID</td>
+<td style="text-align: left;"><code>gpt-4</code>, <code>claude-3-opus</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>LLM_API_KEY</code></td>
+<td style="text-align: left;">API Key</td>
+<td style="text-align: left;"><code>sk-...</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>LLM_BASE_URL</code></td>
+<td style="text-align: left;">API Endpoint (Optional)</td>
+<td style="text-align: left;"><code>https://api.openai.com/v1</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-agentconfig-object">2. AgentConfig Object<a class="headerlink" href="#2-agentconfig-object" title="Permanent link">&para;</a></h3>
+<p>For programmatic control per agent.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">aworld.config.conf</span><span class="w"> </span><span class="kn">import</span> <span class="n">AgentConfig</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">config</span> <span class="o">=</span> <span class="n">AgentConfig</span><span class="p">(</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">llm_provider</span><span class="o">=</span><span class="s2">&quot;openai&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">llm_model_name</span><span class="o">=</span><span class="s2">&quot;gpt-4&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">llm_api_key</span><span class="o">=</span><span class="s2">&quot;sk-...&quot;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">)</span>
 </code></pre></div>
-<h3 id="parallel">Parallel<a class="headerlink" href="#parallel" title="Permanent link">&para;</a></h3>
-<p>Agents run simultaneously, synchronizing at a specific point.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># agent1 and agent2 run in parallel, agent3 waits for both</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">swarm</span> <span class="o">=</span> <span class="n">Swarm</span><span class="p">([(</span><span class="n">agent1</span><span class="p">,</span> <span class="n">agent3</span><span class="p">),</span> <span class="p">(</span><span class="n">agent2</span><span class="p">,</span> <span class="n">agent3</span><span class="p">)],</span> <span class="n">root_agent</span><span class="o">=</span><span class="p">[</span><span class="n">agent1</span><span class="p">,</span> <span class="n">agent2</span><span class="p">])</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">Runners</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="nb">input</span><span class="o">=</span><span class="s2">&quot;start&quot;</span><span class="p">,</span> <span class="n">swarm</span><span class="o">=</span><span class="n">swarm</span><span class="p">)</span>
+<h3 id="3-shared-modelconfig">3. Shared ModelConfig<a class="headerlink" href="#3-shared-modelconfig" title="Permanent link">&para;</a></h3>
+<p>Share a single model configuration across multiple agents.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">aworld.config.conf</span><span class="w"> </span><span class="kn">import</span> <span class="n">ModelConfig</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># Define once</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">shared_model</span> <span class="o">=</span> <span class="n">ModelConfig</span><span class="p">(</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="n">llm_provider</span><span class="o">=</span><span class="s2">&quot;openai&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">llm_model_name</span><span class="o">=</span><span class="s2">&quot;gpt-4&quot;</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">)</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c1"># Use everywhere</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">agent1_config</span> <span class="o">=</span> <span class="n">AgentConfig</span><span class="p">(</span><span class="n">llm_config</span><span class="o">=</span><span class="n">shared_model</span><span class="p">)</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">agent2_config</span> <span class="o">=</span> <span class="n">AgentConfig</span><span class="p">(</span><span class="n">llm_config</span><span class="o">=</span><span class="n">shared_model</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="multi-agent-systems-dynamic-handoff">Multi-Agent Systems (Dynamic Handoff)<a class="headerlink" href="#multi-agent-systems-dynamic-handoff" title="Permanent link">&para;</a></h2>
-<p>MAS allows agents to decide the control flow dynamically.</p>
-<h3 id="basic-setup">Basic Setup<a class="headerlink" href="#basic-setup" title="Permanent link">&para;</a></h3>
-<p>Use <code>GraphBuildType.HANDOFF</code> to enable dynamic routing.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">aworld.core.agent.swarm</span><span class="w"> </span><span class="kn">import</span> <span class="n">Swarm</span><span class="p">,</span> <span class="n">GraphBuildType</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># Define allowed communication paths</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">swarm</span> <span class="o">=</span> <span class="n">Swarm</span><span class="p">(</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="n">topology</span><span class="o">=</span><span class="p">[(</span><span class="n">agent1</span><span class="p">,</span> <span class="n">agent2</span><span class="p">),</span> <span class="p">(</span><span class="n">agent2</span><span class="p">,</span> <span class="n">agent3</span><span class="p">),</span> <span class="p">(</span><span class="n">agent1</span><span class="p">,</span> <span class="n">agent3</span><span class="p">)],</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="n">build_type</span><span class="o">=</span><span class="n">GraphBuildType</span><span class="o">.</span><span class="n">HANDOFF</span><span class="p">,</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="n">root_agent</span><span class="o">=</span><span class="p">[</span><span class="n">agent1</span><span class="p">]</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">)</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="n">Runners</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="nb">input</span><span class="o">=</span><span class="s2">&quot;your question&quot;</span><span class="p">,</span> <span class="n">swarm</span><span class="o">=</span><span class="n">swarm</span><span class="p">)</span>
-</code></pre></div>
-<h3 id="hybrid-systems">Hybrid Systems<a class="headerlink" href="#hybrid-systems" title="Permanent link">&para;</a></h3>
-<p>You can nest Swarms to combine static workflows with dynamic MAS.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># MAS handles complex planning</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">mas_team</span> <span class="o">=</span> <span class="n">Swarm</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">build_type</span><span class="o">=</span><span class="n">GraphBuildType</span><span class="o">.</span><span class="n">HANDOFF</span><span class="p">)</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Workflow wraps the MAS team</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">workflow</span> <span class="o">=</span> <span class="n">Swarm</span><span class="p">(</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="n">topology</span><span class="o">=</span><span class="p">[(</span><span class="n">preprocess_agent</span><span class="p">,</span> <span class="n">mas_team</span><span class="p">),</span> <span class="p">(</span><span class="n">mas_team</span><span class="p">,</span> <span class="n">summary_agent</span><span class="p">)],</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="n">root_agent</span><span class="o">=</span><span class="p">[</span><span class="n">preprocess_agent</span><span class="p">]</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">)</span>
-</code></pre></div>
-<h2 id="advanced-routing">Advanced Routing<a class="headerlink" href="#advanced-routing" title="Permanent link">&para;</a></h2>
-<h3 id="custom-handlers">Custom Handlers<a class="headerlink" href="#custom-handlers" title="Permanent link">&para;</a></h3>
-<p>You can implement custom event handlers to control exactly how messages are routed between agents.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">aworld.runners</span><span class="w"> </span><span class="kn">import</span> <span class="n">HandlerFactory</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">aworld.runners.handler</span><span class="w"> </span><span class="kn">import</span> <span class="n">DefaultHandler</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nd">@HandlerFactory</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;custom_router&quot;</span><span class="p">)</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">class</span><span class="w"> </span><span class="nc">CustomRouter</span><span class="p">(</span><span class="n">DefaultHandler</span><span class="p">):</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">_do_handle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>        <span class="c1"># Your custom routing logic here</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>        <span class="k">pass</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="n">agent</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">event_handler_name</span><span class="o">=</span><span class="s2">&quot;custom_router&quot;</span><span class="p">)</span>
-</code></pre></div>
-<h3 id="examples-react-and-plan-execute">Examples: ReAct and Plan-Execute<a class="headerlink" href="#examples-react-and-plan-execute" title="Permanent link">&para;</a></h3>
-<p>AWorld includes built-in patterns for complex reasoning.</p>
+<h2 id="advanced-settings">Advanced Settings<a class="headerlink" href="#advanced-settings" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>ReAct</strong>: Standard Reason-Act loop.</li>
-<li><strong>Plan-Execute</strong>: Separates planning from execution, allowing parallel execution of planned steps.</li>
+<li><strong><code>need_reset</code></strong>: Whether to reset agent state on start.</li>
+<li><strong><code>step_reset</code></strong>: Whether to reset state between steps.</li>
+<li><strong><code>use_tools_in_prompt</code></strong>: Whether to inject tool descriptions into the prompt automatically.</li>
 </ul>
 
 

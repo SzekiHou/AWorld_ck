@@ -1,0 +1,30 @@
+/* 覆盖 Material 主题的默认 Header 样式 */
+:root {
+  --md-primary-fg-color: #ffffff;        /* 将主色（Header背景）设为白色 */
+  --md-primary-fg-color--light: #ffffff; 
+  --md-primary-fg-color--dark: #ffffff;
+  --md-accent-fg-color: #0080ff;         /* 强调色设为亮蓝 */
+}
+
+/* 顶部导航栏样式 */
+.md-header {
+  background-color: #ffffff !important;
+  color: #333333 !important;             /* 图标默认颜色为深灰 */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* 添加底部细微阴影，更有层次感 */
+}
+
+/* 网站标题文字 - 模仿截图中的蓝色渐变或高亮蓝 */
+.md-header__title, .md-header__button {
+  color: #0080ff !important;             /* 鲜艳的蓝色 */
+  font-weight: bold;
+}
+
+/* 针对深色模式的适配（可选，保持深色模式下依然舒适） */
+[data-md-color-scheme="slate"] .md-header {
+  background-color: #1e1e20 !important;
+  border-bottom: 1px solid #2e2e32;
+}
+[data-md-color-scheme="slate"] .md-header__title {
+  color: #58a6ff !important;
+}
+
